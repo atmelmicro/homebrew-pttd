@@ -5,13 +5,13 @@
 class Pttd < Formula
   desc "A push to talk daemon that allows global push to talk on Linux."
   homepage "https://github.com/atmelmicro/pttd"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/atmelmicro/pttd/releases/download/v0.1.1/pttd_0.1.1_linux_amd64.tar.gz"
-    sha256 "d8347cbe3dd20efbd069b499c11020aee96af8a49fa9b73d56e84dad34506b6d"
+    url "https://github.com/atmelmicro/pttd/releases/download/v0.1.2/pttd_0.1.2_linux_amd64.tar.gz"
+    sha256 "dccd5f476e4dbb73e130eb4a27104621e27cabd3383ac5fd9699281503977f31"
     define_method(:install) do
       bin.install "pttd"
     end
